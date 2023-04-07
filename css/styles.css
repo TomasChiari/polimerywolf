@@ -17,7 +17,7 @@
     z-index: 2;
 }
 
-.company-logo {
+.navbar__logo {
     box-sizing: border-box;
     display: inline;
 
@@ -30,7 +30,7 @@
     left: 15px;
 }
 
-.company-name {
+.navbar__name {
     margin: 0;
     height: 30px;
     
@@ -44,15 +44,15 @@
     left: 100px;
 }
 
-.company-name_polymery {
+.navbar__name--polymery {
     color: rgb(2, 177, 8);
 }
 
-.company-name_wolf{
+.navbar__name--wolf{
     color: #ffffff;
 }
 
-.links {
+.navbar__links {
     margin: 0;
     list-style: none;
 
@@ -61,7 +61,7 @@
     right: 10px;
 }
 
-.links_elements {
+.navbar__links__elements {
     display: inline-block;
     font-size: 26px;
     padding:0px 30px;
@@ -71,7 +71,7 @@
     border: 2px outset black;
 }
 
-.links_elements a {
+.navbar__links__elements a {
     color: white;
     text-decoration: none;
 }
@@ -105,7 +105,7 @@
     right: 0px;
 }
 
-.banner-home {
+.banner__home {
     background-image: url(../assets/images/banner1.png);
     background-size: cover;
     background-position: center;
@@ -113,7 +113,7 @@
     border: 2px solid black
 }
 
-.banner-home_text {
+.banner__home__text {
     width: 850px;
     height: 160px;
     
@@ -226,13 +226,13 @@
 
 
 
-.foot {
+.footer {
     height: 100px;
     background-color: #306;
     text-align: center;
 }
 
-.footer-text {
+.footer__text {
     position: relative;
     top: 30px;
     font-size: 20px;
