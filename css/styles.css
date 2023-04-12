@@ -108,6 +108,25 @@ body {
     color: white;
 }
 
+/* banner about */
+.banner__about__text {
+    text-align: center;
+    
+    font-family: "Roboto",  Arial, Helvetica, sans-serif;
+    font-size: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner__about__image {
+    background-image: url(../assets/images/banner1.png);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+}
+
 /* banner contact */
 .banner__map {
     padding: 0;
@@ -175,6 +194,51 @@ body {
     height: 70px;
 }
 
+/* banner service */
+.banner__service__text {
+
+    
+    font-family: "Roboto",  Arial, Helvetica, sans-serif;
+    font-size: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner__service__text ul {
+    font-size: 20px;
+    padding-left: 15%;
+
+}
+
+.banner__service__image {
+    background-image: url(../assets/images/banner1.png);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+}
+
+/* banner design */
+.banner__design__text {
+    text-align: center;
+    
+    font-family: "Roboto",  Arial, Helvetica, sans-serif;
+    font-size: 16px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner__design__image {
+    background-image: url(../assets/images/banner1.png);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+}
+
+/* media queries */
 @media (max-width: 575px) {
 
     .banner__home__text {
