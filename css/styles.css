@@ -64,14 +64,20 @@ body {
     width: 100%;
     margin: 200px 0 100px 0;
 
-    display: flex;
-
 
     border: 2px solid #000
 }
 
-.banner__div--left{}
-.banner__div--rigth{}
+.banner__div--left{
+    border-right: 1px solid #000
+}
+.banner__div--rigth{
+    border-left: 1px solid #000
+}
+
+.container-fluid {
+    padding: 0;
+}
 
 /* banner index */
 .banner__home{
@@ -102,16 +108,110 @@ body {
     color: white;
 }
 
+/* banner contact */
+.banner__map {
+    padding: 0;
+}
+
+.banner__map iframe {
+
+    width: 100%;
+    height: 100%;
+}
+
+.banner__form {
+    padding: 15px;
+}
+
+.banner__form__title {
+    width: 90%;
+
+    text-align: center;
+    font-size: 25px;
+
+    color: #1d1d1d;
+}
+
+.banner__form__title--span {
+    color: rgb(119, 0, 238);
+    
+}
+
+.banner__form form{
+    display: flex;
+    flex-flow: row wrap;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+.banner__form form div{
+    margin: 5px 0;
+}
+
+.banner__form--name-last {
+    width: 90%;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.banner__form--email {
+    width: 90%;
+}
+
+.banner__form--email input{
+    width: 100%;
+}
+
+.banner__form--text {
+    width: 90%;
+}
+
+.banner__form--text textarea{
+    width: 100%;
+    height: 70px;
+}
+
 @media (max-width: 575px) {
-    .banner {
-        height: 300px;
-    }
 
     .banner__home__text {
         font-size: 25px;
     }
 
 }
+
+@media (max-width: 576px) {
+    .banner__div--left{
+        border-right: 0;
+        border-bottom: 1px solid #000;
+    }
+    .banner__div--rigth{
+        border-left: 0;
+        border-top: 1px solid #000;
+    }
+
+    .banner__form form {
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 905px) {
+
+    .banner__form--name-last input{
+        width: 100%;
+    }
+
+    .banner__form--name-last #name{
+        margin-bottom: 10px;
+    }
+
+}
+
+
 /* footer */
 .footer {
     height: 100px;
