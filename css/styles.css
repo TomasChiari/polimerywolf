@@ -177,6 +177,10 @@ body {
     justify-content: space-between;
 }
 
+.banner__form--name-last input {
+    width: 49%;
+}
+
 .banner__form--email {
     width: 90%;
 }
