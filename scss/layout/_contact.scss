@@ -1,0 +1,69 @@
+.banner__map {
+    padding: 0;
+}
+
+.banner__map iframe {
+
+    width: 100%;
+    height: 100%;
+}
+
+.banner__form {
+    padding: 10% 20px;
+}
+
+.banner__form__title {
+    width: 90%;
+
+    text-align: center;
+    font-size: 25px;
+
+    color: #1d1d1d;
+}
+
+.banner__form__title--span {
+    color: rgb(119, 0, 238);
+    
+}
+
+.banner__form form{
+    display: flex;
+    flex-flow: row wrap;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+.banner__form form div{
+    margin: 5px 0;
+}
+
+.banner__form--name-last {
+    width: 90%;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.banner__form--name-last input {
+    width: 49%;
+}
+
+.banner__form--email {
+    width: 90%;
+}
+
+.banner__form--email input{
+    width: 100%;
+}
+
+.banner__form--text {
+    width: 90%;
+}
+
+.banner__form--text textarea{
+    width: 100%;
+    height: 70px;
+}

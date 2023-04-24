@@ -1,0 +1,21 @@
+/* IMPORTS */
+
+@import 'base/vars';
+@import 'base/reset';
+@import 'base/fonts';
+
+/* COMPONENTS */
+
+@import 'components/navbar';
+@import 'components/footer';
+@import 'components/banner';
+@import 'components/utils';
+
+/* LAYOUT */
+
+@import 'layout/index';
+@import 'layout/about';
+@import 'layout/contact';
+@import 'layout/design';
+@import 'layout/service';
+@import 'layout/mediaqueries';
