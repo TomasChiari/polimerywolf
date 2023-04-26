@@ -1,0 +1,24 @@
+.footer {
+    background-color: $primary;
+
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__text {
+    display: flex;
+    flex-flow: column nowrap;
+    font-size: 15px;
+    color: $ligth;
+    padding: 15px;
+
+    .call-action {
+        width: 100%;
+    }
+}
+
+.footer__text:nth-child(n){
+    text-align: center;
+}

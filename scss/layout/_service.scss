@@ -1,0 +1,29 @@
+.banner__service__text {
+    text-align: center;
+    
+    font-family: "Roboto",  Arial, Helvetica, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+
+    h1, h2, h3 {
+        font-size: 30px;
+        font-weight: bold;
+        font-style: italic;
+        padding-bottom: 5px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+}
+
+
+.banner__service__image {
+    background-image: url(../assets/images/banner1.png);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+}

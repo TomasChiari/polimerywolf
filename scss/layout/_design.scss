@@ -1,0 +1,28 @@
+.banner__design__text {
+    text-align: center;
+    padding: 5px;
+    
+    font-family: "Roboto",  Arial, Helvetica, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+
+    h1 {
+        font-weight: bold;
+        font-style: italic;
+        font-size: 28px;
+    }
+
+    p{
+        font-size: 18px;
+    }
+}
+
+.banner__design__image {
+    background-image: url(../assets/images/banner1.png);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+}

@@ -1,0 +1,41 @@
+@media (max-width: 575px) {
+
+    .banner__home__text {
+        font-size: 25px;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .banner__div--left{
+        border-right: 0;
+        border-bottom: 1px solid $dark;
+    }
+    .banner__div--rigth{
+        border-left: 0;
+        border-top: 1px solid $dark;
+    }
+
+    .banner__form form {
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 905px) {
+
+    .banner__form--name-last {
+    
+        input{
+            width: 100%;
+        }
+    }
+
+    .banner__form--name-last {
+        
+        #name{
+            margin-bottom: 10px;
+        }
+    }
+
+}

@@ -1,0 +1,15 @@
+.banner {
+    height: 600px;
+    width: 100%;
+    margin: 200px 0 100px 0;
+
+
+    border: 2px solid $dark;
+}
+
+.banner__div--left{
+    border-right: 1px solid $dark
+}
+.banner__div--rigth{
+    border-left: 1px solid $dark
+}
