@@ -15,19 +15,20 @@ body {
 }
 
 .navbar__logo {
-  border: 2px solid black;
+  margin-left: 15px;
+  border: 2px solid #191919;
   border-radius: 50%;
   width: 75px;
 }
 
 .navbar__polimery {
-  color: rgb(2, 177, 8);
+  color: #02b108;
   font-family: Anton;
   font-size: 26px;
 }
 
 .navbar__wolf {
-  color: #ffffff;
+  color: #f0f0f0;
   font-family: Anton;
   font-size: 26px;
 }
@@ -36,26 +37,26 @@ body {
   margin: 5px;
   padding: 0px 15px;
   border-radius: 25px;
-  border: 2px solid black;
-  background-color: rgb(2, 177, 8);
+  border: 2px solid #191919;
+  background-color: #02b108;
 }
 
 .nav-item a {
-  color: #ffffff;
+  color: #f0f0f0;
   text-decoration: none;
   text-align: center;
 }
 
 .navbar-toggler {
-  border: 2px solid rgb(2, 177, 8);
-  color: rgb(2, 177, 8);
+  border: 2px solid #02b108;
+  color: #02b108;
   background-color: rgba(255, 255, 255, 0.1098039216);
 }
 
 .footer {
-  height: 100px;
   background-color: #306;
   display: flex;
+  flex-flow: wrap;
   align-items: center;
   justify-content: center;
 }
@@ -64,12 +65,14 @@ body {
   display: flex;
   flex-flow: column nowrap;
   font-size: 15px;
-  color: #ffffff;
+  color: #f0f0f0;
+  padding: 15px;
+}
+.footer__text .call-action {
+  width: 100%;
 }
 
 .footer__text:nth-child(n) {
-  justify-content: center;
-  align-items: center;
   text-align: center;
 }
 
@@ -77,15 +80,15 @@ body {
   height: 600px;
   width: 100%;
   margin: 200px 0 100px 0;
-  border: 2px solid #000;
+  border: 2px solid #191919;
 }
 
 .banner__div--left {
-  border-right: 1px solid #000;
+  border-right: 1px solid #191919;
 }
 
 .banner__div--rigth {
-  border-left: 1px solid #000;
+  border-left: 1px solid #191919;
 }
 
 .container-fluid {
@@ -115,16 +118,25 @@ body {
   text-align: center;
   font-family: Anton, Arial, Helvetica, sans-serif;
   font-size: 30px;
-  color: white;
+  color: #f0f0f0;
 }
 
 .banner__about__text {
   text-align: center;
+  padding: 5px;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
-  font-size: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: column;
+}
+.banner__about__text h1 {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 38px;
+}
+.banner__about__text p {
+  font-size: 28px;
 }
 
 .banner__about__image {
@@ -137,7 +149,6 @@ body {
 .banner__map {
   padding: 0;
 }
-
 .banner__map iframe {
   width: 100%;
   height: 100%;
@@ -146,27 +157,25 @@ body {
 .banner__form {
   padding: 10% 20px;
 }
-
-.banner__form__title {
-  width: 90%;
-  text-align: center;
-  font-size: 25px;
-  color: #1d1d1d;
-}
-
-.banner__form__title--span {
-  color: rgb(119, 0, 238);
-}
-
 .banner__form form {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
 }
-
 .banner__form form div {
   margin: 5px 0;
+}
+
+.banner__form__title {
+  width: 90%;
+  text-align: center;
+  font-size: 25px;
+  color: #191919;
+}
+
+.banner__form__title--span {
+  color: #7700ee;
 }
 
 .banner__form--name-last {
@@ -175,7 +184,6 @@ body {
   flex-flow: row wrap;
   justify-content: space-between;
 }
-
 .banner__form--name-last input {
   width: 49%;
 }
@@ -183,7 +191,6 @@ body {
 .banner__form--email {
   width: 90%;
 }
-
 .banner__form--email input {
   width: 100%;
 }
@@ -191,7 +198,6 @@ body {
 .banner__form--text {
   width: 90%;
 }
-
 .banner__form--text textarea {
   width: 100%;
   height: 70px;
@@ -199,11 +205,20 @@ body {
 
 .banner__design__text {
   text-align: center;
+  padding: 5px;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
-  font-size: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: column;
+}
+.banner__design__text h1 {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 28px;
+}
+.banner__design__text p {
+  font-size: 18px;
 }
 
 .banner__design__image {
@@ -214,16 +229,21 @@ body {
 }
 
 .banner__service__text {
+  text-align: center;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
-  font-size: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: column wrap;
 }
-
-.banner__service__text ul {
+.banner__service__text h1, .banner__service__text h2, .banner__service__text h3 {
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+  padding-bottom: 5px;
+}
+.banner__service__text p {
   font-size: 20px;
-  padding-left: 15%;
 }
 
 .banner__service__image {
@@ -241,11 +261,11 @@ body {
 @media (max-width: 576px) {
   .banner__div--left {
     border-right: 0;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #191919;
   }
   .banner__div--rigth {
     border-left: 0;
-    border-top: 1px solid #000;
+    border-top: 1px solid #191919;
   }
   .banner__form form {
     flex-direction: column;

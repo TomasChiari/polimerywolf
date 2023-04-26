@@ -1,23 +1,24 @@
 .navbar{
-    background-color: #306;
+    background-color: $primary;
 }
 
 .navbar__logo {
+    margin-left: 15px;
 
-    border: 2px solid black;
+    border: 2px solid $dark;
     border-radius: 50%;
 
     width: 75px;
 }
 
 .navbar__polimery{
-    color: rgb(2, 177, 8);
+    color: $secondary;
     font-family: Anton;
     font-size: 26px;
 }
 
 .navbar__wolf{
-    color: #ffffff;
+    color: $ligth;
     font-family: Anton;
     font-size: 26px;
 }
@@ -26,19 +27,19 @@
     margin: 5px;
     padding: 0px 15px;
     border-radius: 25px;
-    border: 2px solid black;
+    border: 2px solid $dark;
 
-    background-color: rgb(2, 177, 8)
+    background-color: $secondary
 }
 
 .nav-item a {
-    color: #ffffff;
+    color: $ligth;
     text-decoration: none;
     text-align: center;
 }
 
 .navbar-toggler{
-    border: 2px solid rgb(2, 177, 8);
-    color: rgb(2, 177, 8);
-    background-color: #ffffff1c;
+    border: 2px solid $secondary;
+    color: $secondary;
+    background-color: $transparent-nav;
 }

@@ -9,11 +9,11 @@
 @media (max-width: 576px) {
     .banner__div--left{
         border-right: 0;
-        border-bottom: 1px solid #000;
+        border-bottom: 1px solid $dark;
     }
     .banner__div--rigth{
         border-left: 0;
-        border-top: 1px solid #000;
+        border-top: 1px solid $dark;
     }
 
     .banner__form form {
@@ -24,12 +24,18 @@
 
 @media (max-width: 905px) {
 
-    .banner__form--name-last input{
-        width: 100%;
+    .banner__form--name-last {
+    
+        input{
+            width: 100%;
+        }
     }
 
-    .banner__form--name-last #name{
-        margin-bottom: 10px;
+    .banner__form--name-last {
+        
+        #name{
+            margin-bottom: 10px;
+        }
     }
 
 }
