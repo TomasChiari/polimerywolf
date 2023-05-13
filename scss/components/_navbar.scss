@@ -1,45 +1,51 @@
 .navbar{
     background-color: $primary;
+    
+    .navbar__logo {
+        margin-left: 15px;
+
+        border: 2px solid $dark;
+        border-radius: 50%;
+
+        width: 75px;
+    }
+
+    .navbar__polimery{
+        color: $secondary;
+        font-family: Anton;
+        font-size: 26px;
+    }
+
+    .navbar__wolf{
+        color: $ligth;
+        font-family: Anton;
+        font-size: 26px;
+    }
+
+    .navbar-toggler{
+        border: 2px solid $secondary;
+        color: $secondary;
+        background-color: $transparent-nav;
+    }
+    
+    .nav-item {
+        margin: 5px;
+        padding: 0px 15px;
+        border-radius: 25px;
+        border: 2px solid $dark;
+
+        background-color: $secondary;
+
+        a {
+            color: $ligth;
+            text-decoration: none;
+            text-align: center;
+        }
+    }
 }
 
-.navbar__logo {
-    margin-left: 15px;
+.nav-item:hover {
+    // background-color: red;
+    animation: growup 0.2s linear forwards ;
 
-    border: 2px solid $dark;
-    border-radius: 50%;
-
-    width: 75px;
-}
-
-.navbar__polimery{
-    color: $secondary;
-    font-family: Anton;
-    font-size: 26px;
-}
-
-.navbar__wolf{
-    color: $ligth;
-    font-family: Anton;
-    font-size: 26px;
-}
-
-.nav-item {
-    margin: 5px;
-    padding: 0px 15px;
-    border-radius: 25px;
-    border: 2px solid $dark;
-
-    background-color: $secondary
-}
-
-.nav-item a {
-    color: $ligth;
-    text-decoration: none;
-    text-align: center;
-}
-
-.navbar-toggler{
-    border: 2px solid $secondary;
-    color: $secondary;
-    background-color: $transparent-nav;
 }
