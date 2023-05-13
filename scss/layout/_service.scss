@@ -1,29 +1,81 @@
-.banner__service__text {
-    text-align: center;
-    
-    font-family: "Roboto",  Arial, Helvetica, sans-serif;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column wrap;
-
-    h1, h2, h3 {
-        font-size: 30px;
-        font-weight: bold;
-        font-style: italic;
-        padding-bottom: 5px;
-    }
-
-    p {
-        font-size: 20px;
-    }
+section {
+    position: relative;
+    transform-style: preserve-3d;
 }
 
 
-.banner__service__image {
-    background-image: url(../assets/images/banner1.png);
-    background-size: cover;
-    background-position: center;
-    box-sizing: border-box;
+.service-banner {
+    height: calc(100vh - 100px);
+    width: 100%;
+
+    margin-top: 100px;
+
+    background-color: $primary;
+    box-shadow: 0px 10px 10px  rgba(0,0,0,0.75);
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 999;
+
+    .service-banner_text {
+        width: 70%;
+        background-color: $secondary;
+        border-radius: 20px;
+        padding: 10px 20px;
+        animation: imgmove 4s linear infinite;
+
+        h1 {
+            color: $ligth;
+            text-align: center;
+            font-size: 6vh;
+            font-family: "Anton";
+            font-weight: bold;
+            text-decoration: underline;
+            text-shadow: 1px 1px 5px rgba(0,0,0,0.75);
+
+        }
+    
+        p {
+            color: $ligth;
+            text-align: center;
+            font-size: 4.5vh;
+            text-shadow: 1px 1px 5px rgba(0,0,0,0.75);
+        }
+    }
+}
+
+.materials-banner {
+    width: 100%;
+    background: center fixed url(../../assets/images/banner-mats.png);
+    padding: 10vh 0;
+
+    display: flex;
+    justify-content: center;
+    .materials-banner_text {
+        width: 70%;
+        background-color: $transparent-tittle;
+        border-radius: 20px;
+        padding: 10px 20px;
+
+        h2 {
+            color: $ligth;
+            text-align: center;
+            font-size: 6vh;
+            font-family: "Anton";
+            font-weight: bold;
+            text-decoration: underline;
+            text-shadow: 1px 1px 5px rgba(0,0,0,0.75);
+
+        }
+    
+        p {
+            color: $ligth;
+            text-align: center;
+            font-size: 4.5vh;
+            text-shadow: 1px 1px 5px rgba(0,0,0,0.75);
+        }
+    }
 }

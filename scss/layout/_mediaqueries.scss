@@ -1,10 +1,96 @@
-@media (max-width: 575px) {
+@media (max-width: 1124px) {
 
-    .banner__home__text {
-        font-size: 25px;
+    .service-banner {
+        
+        .service-banner_text {
+            width: 90%;
+            h1 {
+                font-size: 4vh;
+            }
+            p {
+                font-size: 3.5vh;
+            }
+        }
     }
 
+    .materials-banner {
+        .materials-banner_text {
+            width: 90%;
+
+            h2 {
+                font-size: 4vh;
+            }
+            p {
+                font-size: 3.5vh;
+            }
+        }
+    }   
+    .design-banner {
+        
+        .design-banner_text {
+            width: 90%;
+            h1 {
+                font-size: 4vh;
+            }
+            p {
+                font-size: 3.5vh;
+            }
+        }
+    }
+
+    .workflow-banner {
+        .workflow-banner_text {
+            width: 90%;
+
+            h2 {
+                font-size: 4vh;
+            }
+            p {
+                font-size: 3.5vh;
+            }
+        }
+    } 
 }
+
+@media (max-width: 700px) {
+
+    .main-banner {
+
+        flex-flow: column;
+
+        .main-banner_text h1{
+            font-size: 3vh;
+        }
+
+        .main-banner_img img{
+            width: 25vh;
+            height: 25vh;
+        }
+    }
+
+    .main-about-banner p {
+        font-size: 3vh;
+    }
+
+    .main-service-banner p {
+        font-size: 3vh;
+    }
+
+    .about-banner {
+
+        .about-banner_text {
+        font-size: 4vh;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .about-team-banner .cards-title {
+        font-size: 4vh;
+
+    }
+}
+
 
 @media (max-width: 576px) {
     .banner__div--left{

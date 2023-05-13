@@ -9,48 +9,62 @@ body {
   font-family: Anton;
   src: url(../assets/Fonts/Anton-Regular.ttf);
 }
+@keyframes imgmove {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes growup {
+  100% {
+    scale: 1.1;
+  }
+}
 /* COMPONENTS */
 .navbar {
   background-color: #306;
 }
-
-.navbar__logo {
+.navbar .navbar__logo {
   margin-left: 15px;
   border: 2px solid #191919;
   border-radius: 50%;
   width: 75px;
 }
-
-.navbar__polimery {
+.navbar .navbar__polimery {
   color: #02b108;
   font-family: Anton;
   font-size: 26px;
 }
-
-.navbar__wolf {
+.navbar .navbar__wolf {
   color: #f0f0f0;
   font-family: Anton;
   font-size: 26px;
 }
-
-.nav-item {
+.navbar .navbar-toggler {
+  border: 2px solid #02b108;
+  color: #02b108;
+  background-color: rgba(255, 255, 255, 0.1098039216);
+}
+.navbar .nav-item {
   margin: 5px;
   padding: 0px 15px;
   border-radius: 25px;
   border: 2px solid #191919;
   background-color: #02b108;
 }
-
-.nav-item a {
+.navbar .nav-item a {
   color: #f0f0f0;
   text-decoration: none;
   text-align: center;
 }
 
-.navbar-toggler {
-  border: 2px solid #02b108;
-  color: #02b108;
-  background-color: rgba(255, 255, 255, 0.1098039216);
+.nav-item:hover {
+  animation: growup 0.2s linear forwards;
 }
 
 .footer {
@@ -96,54 +110,179 @@ body {
 }
 
 /* LAYOUT */
-.banner__home {
-  background-image: url(../assets/images/banner1.png);
-  background-size: cover;
-  background-position: center;
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+section {
+  position: relative;
+  transform-style: preserve-3d;
 }
 
-.banner__home__text {
+.main-banner {
+  height: calc(100vh - 100px);
+  width: 100%;
+  margin-top: 100px;
+  background-color: #306;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.75);
   display: flex;
-  align-items: center;
+  flex-flow: row nowrap;
   justify-content: center;
-  margin: 0 15px;
-  padding: 4px 15px;
-  height: 100px;
+  align-items: center;
+  z-index: 999;
+}
+.main-banner .main-banner_text {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-banner .main-banner_text h1 {
+  width: 70%;
+  background-color: #02b108;
   border-radius: 20px;
-  background-color: rgba(62, 62, 62, 0.8);
-  text-align: center;
-  font-family: Anton, Arial, Helvetica, sans-serif;
-  font-size: 30px;
+  padding: 4px 15px;
   color: #f0f0f0;
-}
-
-.banner__about__text {
   text-align: center;
-  padding: 5px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.75);
+  font-size: 6vh;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+.main-banner .main-banner_img {
+  width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: column;
 }
-.banner__about__text h1 {
-  font-weight: bold;
-  font-style: italic;
-  font-size: 38px;
-}
-.banner__about__text p {
-  font-size: 28px;
+.main-banner .main-banner_img img {
+  width: 50vh;
+  height: 50vh;
+  border-radius: 0%;
+  animation: imgmove 2s linear infinite;
 }
 
-.banner__about__image {
-  background-image: url(../assets/images/banner1.png);
-  background-size: cover;
-  background-position: center;
-  box-sizing: border-box;
+.main-about-banner {
+  height: 55vh;
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  background: center fixed url(../../assets/images/banner1.webp);
+}
+.main-about-banner p {
+  width: 70%;
+  background-color: rgba(62, 62, 62, 0.8);
+  border-radius: 20px;
+  padding: 4px 15px;
+  color: #f0f0f0;
+  text-align: center;
+  font-size: 4.5vh;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+.main-service-banner {
+  height: 55vh;
+  width: 100%;
+  box-shadow: 0px -10px 10px rgba(0, 0, 0, 0.75);
+  background-color: #306;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+}
+.main-service-banner p {
+  width: 70%;
+  background-color: #02b108;
+  border-radius: 20px;
+  padding: 4px 15px;
+  color: #f0f0f0;
+  text-align: center;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.75);
+  font-size: 4.5vh;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+section {
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.about-banner {
+  height: calc(100vh - 100px);
+  width: 100%;
+  margin-top: 100px;
+  background-color: #306;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.75);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+.about-banner .about-banner_text {
+  width: 70%;
+  background-color: #02b108;
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: #f0f0f0;
+  text-align: center;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.75);
+  font-size: 6vh;
+  animation: imgmove 4s linear infinite;
+}
+
+.about-team-banner {
+  width: 100%;
+  background: center fixed url(../../assets/images/Banner-about.png);
+  padding-top: 5vh;
+}
+.about-team-banner .cards-title {
+  margin: 0 auto;
+  width: 70%;
+  background-color: rgba(62, 62, 62, 0.8);
+  border-radius: 20px;
+  padding: 4px 15px;
+  color: #f0f0f0;
+  text-align: center;
+  font-size: 6vh;
+}
+.about-team-banner .cards {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.about-team-banner .cards .card {
+  width: 250px;
+  height: 350px;
+  margin: 15vh 0;
+  background-color: #f0f0f0;
+  border: 0.5vh solid #191919;
+  border-radius: 30px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.about-team-banner .cards .card .card-logo {
+  width: 85%;
+  margin-top: 5px;
+  border-radius: 50%;
+  border: 1px solid #191919;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.75);
+}
+.about-team-banner .cards .card .card-name {
+  font-weight: 700;
+  text-align: center;
+  text-decoration: underline;
+}
+.about-team-banner .cards .card .card-rol {
+  width: 60%;
+  font-weight: 500;
+  text-align: center;
+  color: #f0f0f0;
+  background-color: #02b108;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.75);
+  border-radius: 30px;
 }
 
 .banner__map {
@@ -203,59 +342,206 @@ body {
   height: 70px;
 }
 
-.banner__design__text {
-  text-align: center;
-  padding: 5px;
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
+section {
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.design-banner {
+  height: calc(100vh - 100px);
+  width: 100%;
+  margin-top: 100px;
+  background-color: #306;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.75);
   display: flex;
+  flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  flex-flow: column;
+  z-index: 999;
 }
-.banner__design__text h1 {
-  font-weight: bold;
-  font-style: italic;
-  font-size: 28px;
+.design-banner .design-banner_text {
+  width: 70%;
+  background-color: #02b108;
+  border-radius: 20px;
+  padding: 10px 20px;
+  animation: imgmove 4s linear infinite;
 }
-.banner__design__text p {
-  font-size: 18px;
-}
-
-.banner__design__image {
-  background-image: url(../assets/images/banner1.png);
-  background-size: cover;
-  background-position: center;
-  box-sizing: border-box;
-}
-
-.banner__service__text {
+.design-banner .design-banner_text h1 {
+  color: #f0f0f0;
   text-align: center;
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 6vh;
+  font-family: "Anton";
+  font-weight: bold;
+  text-decoration: underline;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.75);
+}
+.design-banner .design-banner_text p {
+  color: #f0f0f0;
+  text-align: center;
+  font-size: 4.5vh;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.75);
+}
+
+.workflow-banner {
+  width: 100%;
+  background: center fixed url(../../assets/images/banner-design.jpg);
+  padding: 10vh 0;
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-flow: column wrap;
 }
-.banner__service__text h1, .banner__service__text h2, .banner__service__text h3 {
-  font-size: 30px;
+.workflow-banner .workflow-banner_text {
+  width: 70%;
+  background-color: rgba(62, 62, 62, 0.8);
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+.workflow-banner .workflow-banner_text h2 {
+  color: #f0f0f0;
+  text-align: center;
+  font-size: 6vh;
+  font-family: "Anton";
   font-weight: bold;
-  font-style: italic;
-  padding-bottom: 5px;
+  text-decoration: underline;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.75);
 }
-.banner__service__text p {
-  font-size: 20px;
-}
-
-.banner__service__image {
-  background-image: url(../assets/images/banner1.png);
-  background-size: cover;
-  background-position: center;
-  box-sizing: border-box;
+.workflow-banner .workflow-banner_text p {
+  color: #f0f0f0;
+  text-align: center;
+  font-size: 4.5vh;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.75);
 }
 
-@media (max-width: 575px) {
-  .banner__home__text {
-    font-size: 25px;
+section {
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.service-banner {
+  height: calc(100vh - 100px);
+  width: 100%;
+  margin-top: 100px;
+  background-color: #306;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.75);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+.service-banner .service-banner_text {
+  width: 70%;
+  background-color: #02b108;
+  border-radius: 20px;
+  padding: 10px 20px;
+  animation: imgmove 4s linear infinite;
+}
+.service-banner .service-banner_text h1 {
+  color: #f0f0f0;
+  text-align: center;
+  font-size: 6vh;
+  font-family: "Anton";
+  font-weight: bold;
+  text-decoration: underline;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.75);
+}
+.service-banner .service-banner_text p {
+  color: #f0f0f0;
+  text-align: center;
+  font-size: 4.5vh;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.75);
+}
+
+.materials-banner {
+  width: 100%;
+  background: center fixed url(../../assets/images/banner-mats.png);
+  padding: 10vh 0;
+  display: flex;
+  justify-content: center;
+}
+.materials-banner .materials-banner_text {
+  width: 70%;
+  background-color: rgba(62, 62, 62, 0.8);
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+.materials-banner .materials-banner_text h2 {
+  color: #f0f0f0;
+  text-align: center;
+  font-size: 6vh;
+  font-family: "Anton";
+  font-weight: bold;
+  text-decoration: underline;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.75);
+}
+.materials-banner .materials-banner_text p {
+  color: #f0f0f0;
+  text-align: center;
+  font-size: 4.5vh;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.75);
+}
+
+@media (max-width: 1124px) {
+  .service-banner .service-banner_text {
+    width: 90%;
+  }
+  .service-banner .service-banner_text h1 {
+    font-size: 4vh;
+  }
+  .service-banner .service-banner_text p {
+    font-size: 3.5vh;
+  }
+  .materials-banner .materials-banner_text {
+    width: 90%;
+  }
+  .materials-banner .materials-banner_text h2 {
+    font-size: 4vh;
+  }
+  .materials-banner .materials-banner_text p {
+    font-size: 3.5vh;
+  }
+  .design-banner .design-banner_text {
+    width: 90%;
+  }
+  .design-banner .design-banner_text h1 {
+    font-size: 4vh;
+  }
+  .design-banner .design-banner_text p {
+    font-size: 3.5vh;
+  }
+  .workflow-banner .workflow-banner_text {
+    width: 90%;
+  }
+  .workflow-banner .workflow-banner_text h2 {
+    font-size: 4vh;
+  }
+  .workflow-banner .workflow-banner_text p {
+    font-size: 3.5vh;
+  }
+}
+@media (max-width: 700px) {
+  .main-banner {
+    flex-flow: column;
+  }
+  .main-banner .main-banner_text h1 {
+    font-size: 3vh;
+  }
+  .main-banner .main-banner_img img {
+    width: 25vh;
+    height: 25vh;
+  }
+  .main-about-banner p {
+    font-size: 3vh;
+  }
+  .main-service-banner p {
+    font-size: 3vh;
+  }
+  .about-banner .about-banner_text {
+    font-size: 4vh;
+  }
+}
+@media (max-width: 400px) {
+  .about-team-banner .cards-title {
+    font-size: 4vh;
   }
 }
 @media (max-width: 576px) {

@@ -1,28 +1,110 @@
-.banner__design__text {
-    text-align: center;
-    padding: 5px;
+// .banner__design__text {
+//     text-align: center;
+//     padding: 5px;
     
-    font-family: "Roboto",  Arial, Helvetica, sans-serif;
+//     font-family: "Roboto",  Arial, Helvetica, sans-serif;
+
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     flex-flow: column;
+
+//     h1 {
+//         font-weight: bold;
+//         font-style: italic;
+//         font-size: 28px;
+//     }
+
+//     p{
+//         font-size: 18px;
+//     }
+// }
+
+// .banner__design__image {
+//     background-image: url(../assets/images/banner1.png);
+//     background-size: cover;
+//     background-position: center;
+//     box-sizing: border-box;
+// }
+section {
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+
+.design-banner {
+    height: calc(100vh - 100px);
+    width: 100%;
+
+    margin-top: 100px;
+
+    background-color: $primary;
+    box-shadow: 0px 10px 10px  rgba(0,0,0,0.75);
 
     display: flex;
+    flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    flex-flow: column;
 
-    h1 {
-        font-weight: bold;
-        font-style: italic;
-        font-size: 28px;
-    }
+    z-index: 999;
 
-    p{
-        font-size: 18px;
+    .design-banner_text {
+        width: 70%;
+        background-color: $secondary;
+        border-radius: 20px;
+        padding: 10px 20px;
+        animation: imgmove 4s linear infinite;
+
+        h1 {
+            color: $ligth;
+            text-align: center;
+            font-size: 6vh;
+            font-family: "Anton";
+            font-weight: bold;
+            text-decoration: underline;
+            text-shadow: 1px 1px 5px rgba(0,0,0,0.75);
+
+        }
+    
+        p {
+            color: $ligth;
+            text-align: center;
+            font-size: 4.5vh;
+            text-shadow: 1px 1px 5px rgba(0,0,0,0.75);
+        }
     }
 }
 
-.banner__design__image {
-    background-image: url(../assets/images/banner1.png);
-    background-size: cover;
-    background-position: center;
-    box-sizing: border-box;
+.workflow-banner {
+    width: 100%;
+    background: center fixed url(../../assets/images/banner-design.jpg);
+    padding: 10vh 0;
+
+    display: flex;
+    justify-content: center;
+
+    .workflow-banner_text {
+        width: 70%;
+        background-color: $transparent-tittle;
+        border-radius: 20px;
+        padding: 10px 20px;
+
+        h2 {
+            color: $ligth;
+            text-align: center;
+            font-size: 6vh;
+            font-family: "Anton";
+            font-weight: bold;
+            text-decoration: underline;
+            text-shadow: 1px 1px 5px rgba(0,0,0,0.75);
+
+        }
+    
+        p {
+            color: $ligth;
+            text-align: center;
+            font-size: 4.5vh;
+            text-shadow: 1px 1px 5px rgba(0,0,0,0.75);
+        }
+    }
 }

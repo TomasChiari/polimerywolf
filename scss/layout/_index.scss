@@ -1,27 +1,111 @@
-.banner__home{
-    background-image: url(../assets/images/banner1.png);
-    background-size: cover;
-    background-position: center;
-    box-sizing: border-box;
+section {
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+
+.main-banner {
+    height: calc(100vh - 100px);
+    width: 100%;
+
+    margin-top: 100px;
+
+    background-color: $primary;
+    box-shadow: 0px 10px 10px  rgba(0,0,0,0.75);
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 999;
+
+    .main-banner_text {
+        width: 50%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        h1 {
+            width: 70%;
+            background-color: $secondary;
+            border-radius: 20px;
+            padding: 4px 15px;
+            color: $ligth;
+            text-align: center;
+            text-shadow: 1px 1px 5px rgba(0,0,0,0.75);
+            font-size: 6vh;
+            font-family: "Roboto",  Arial, Helvetica, sans-serif;
+        }
+    }
+
+    .main-banner_img {
+        width: 50%;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 50vh;
+            height: 50vh;
+            border-radius: 0%;
+
+            animation: imgmove 2s linear infinite;
+        }
+    }
+}
+
+.main-about-banner {
+    height: 55vh;
+    width: 100%;
+
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+
+    background: center fixed url(../../assets/images/banner1.webp);
+
+    p {
+        width: 70%;
+        background-color: $transparent-tittle;
+        border-radius: 20px;
+        padding: 4px 15px;
+        color: $ligth;
+        text-align: center;
+        font-size: 4.5vh;
+        font-family: "Roboto",  Arial, Helvetica, sans-serif;
+    }
+}
+
+.main-service-banner {
+    height: 55vh;
+    width: 100%;
+
+    box-shadow: 0px -10px 10px  rgba(0,0,0,0.75);
+    background-color: $primary;
+
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 99;
+
+    p {
+        width: 70%;
+        background-color: $secondary;
+        border-radius: 20px;
+        padding: 4px 15px;
+        color: $ligth;
+        text-align: center;
+        text-shadow: 1px 1px 5px rgba(0,0,0,0.75);
+        font-size: 4.5vh;
+        font-family: "Roboto",  Arial, Helvetica, sans-serif;
+    }
     
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
-.banner__home__text{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    margin: 0 15px;
-    padding: 4px 15px;
-    height: 100px;
-    border-radius: 20px;
-    background-color: $transparent-tittle;
-    text-align: center;
-
-    font-family: Anton, Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    color: $ligth;
-}
